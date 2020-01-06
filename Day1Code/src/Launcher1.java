@@ -5,6 +5,7 @@ public class Launcher1 {
         try {
             Writer w=new FileWriter(new File("d:\\ccc"));
             BufferedWriter bf=new BufferedWriter(w);
+            String a = "abc";
         } catch (IOException e) {
             e.printStackTrace();
         }
