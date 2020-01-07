@@ -1,32 +1,30 @@
+import serializabletest.Employee;
+
 import java.io.*;
 
 public class Launcher1 {
     public static void main(String[] args) {
-        Writer w = null;
-        BufferedWriter bf = null;
+        Employee employee = new Employee("abc", "e1234", "eabcde");
+        File fl = new File("d:\\ccc\\abc.ser");
+        OutputStream flin = null;
+        ObjectOutput oin = null;
         try {
-            w = new FileWriter(new File("d:\\ccc\\testmy.txt"), true);
-            bf = new BufferedWriter(w);
-            String str = "abc test";
-            bf.write(str);
-            bf.newLine();
-            bf.write(str);
-            bf.write(str);
-            bf.write(str);
-            bf.flush();
+            flin = new FileOutputStream(fl);
+            oin = new ObjectOutputStream(flin);
+            oin.writeObject(employee);
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (bf != null) {
-                    bf.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            if (w != null) {
+            if (oin != null) {
                 try {
-                    w.close();
+                    oin.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (flin != null) {
+                try {
+                    flin.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
