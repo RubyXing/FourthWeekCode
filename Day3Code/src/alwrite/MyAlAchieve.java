@@ -89,7 +89,17 @@ public class MyAlAchieve {
 
     //查找indexOf()
     public int indexOf(Object ob) {
-
+        if (ob == null) {
+            for (int i = 0; i < elementmy.length; i++) {
+                if (elementmy[i] == null)
+                    return i;
+            }
+        } else {
+            for (int i = 0; i < elementmy.length; i++) {
+                if (ob.equals(elementmy[i]))
+                    return i;
+            }
+        }
         return -1;
     }
 
