@@ -3,10 +3,12 @@ package collectionCode;/*
  *
  */
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import serializabletest.Employee;
+
+import java.io.PrintStream;
+import java.lang.reflect.Array;
+import java.util.*;
+import java.util.function.*;
 //某中学有若干学生(学生对象放在一个List中)，
 //每个学生有一个姓名属性(String)、班级名称属性(String)和考试成绩属性(double)
 //某次考试结束后，每个学生都获得了一个考试成绩。
@@ -15,8 +17,8 @@ import java.util.List;
 
 public class CstudyCode {
     public void start() {
-//        collections1();
-        collections2();
+        collections1();
+//        collections2();
     }
 
     private void collections1() {
@@ -27,13 +29,13 @@ public class CstudyCode {
         stus.add(new Students("ddd", "second", 40));
         stus.add(new Students("eeeeee", "third", 50));
 
-        stus.forEach(students -> System.out.println(students.toString()));
-        System.out.println(stus);
-        for (Students students : stus) {
-            System.out.println(students.toString());
-        }
-        stus.removeIf(students -> students.getSname().length() < 5);
-        System.out.println(stus);
+        stus.forEach(System.out::println);
+//        System.out.println(stus);
+//        for (Students students : stus) {
+//            System.out.println(students.toString());
+//        }
+//        stus.removeIf(students -> students.getSname().length() < 5);
+//        System.out.println(stus);
 
     }
 
@@ -51,5 +53,7 @@ public class CstudyCode {
         grades.add(150);
         Collections.sort(grades);
         grades.forEach(gradet -> System.out.println(gradet.toString()));
+
+
     }
 }
