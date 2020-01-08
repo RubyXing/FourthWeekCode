@@ -79,7 +79,7 @@ public class MyAlAchieve {
 
     //下标删除
     public void remove(int index) {
-
+        setAl(index, null);
     }
 
     //条件删除
