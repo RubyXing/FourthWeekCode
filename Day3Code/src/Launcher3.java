@@ -1,5 +1,4 @@
-import java.io.File;
-import java.util.*;
+
 
 public class Launcher3 {
     public static void main(String[] args) {
@@ -12,12 +11,5 @@ public class Launcher3 {
 //        System.out.println(new Scanner(System.in).nextLine().replaceAll("(.)\\1+", "$1"));
 
 
-        Set<Character> set = new HashSet<>();
-        Scanner sc = new Scanner(System.in);
-        char[] ab = sc.nextLine().toCharArray();
-        for (int i = 0; i < ab.length; i++) {
-            set.add(ab[i]);
-        }
-        System.out.println(set.toString());
     }
 }
