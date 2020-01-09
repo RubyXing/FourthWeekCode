@@ -82,7 +82,7 @@ public class MyAlAchieve {
         setAl(index, null);
     }
 
-    //条件删除
+    //条件删除//lambda泛型编程
     public void removeif() {
 
     }
