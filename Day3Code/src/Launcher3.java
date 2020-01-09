@@ -9,8 +9,15 @@ public class Launcher3 {
 //        altest.add(3);
 //        altest.set(-1, 5);
 
-
 //        System.out.println(new Scanner(System.in).nextLine().replaceAll("(.)\\1+", "$1"));
 
+
+        Set<Character> set = new HashSet<>();
+        Scanner sc = new Scanner(System.in);
+        char[] ab = sc.nextLine().toCharArray();
+        for (int i = 0; i < ab.length; i++) {
+            set.add(ab[i]);
+        }
+        System.out.println(set.toString());
     }
 }
