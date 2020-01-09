@@ -32,7 +32,6 @@ public class HomeWork4 {
             set.add((int) (Math.random() * 20));
         }
         System.out.println(set.toString());
-
     }
 
     //    3:把如下元素存入List集合“aaa” “bbb” “aaa” “abc”“xyz” “123” “xyz”去掉重复元素
@@ -69,8 +68,6 @@ public class HomeWork4 {
                 }
             }
         }
-
-
     }
 
     //5; 当前班上有同学进行报道，当学号与姓名相同时就被认为是同一个学生，统计当前班上同学姓名和人数。随意创建5个学生即可。
