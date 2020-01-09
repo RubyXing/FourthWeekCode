@@ -46,4 +46,12 @@ public class Complans {
     public void setCnumber(int cnumber) {
         this.cnumber = cnumber;
     }
+
+    @Override
+    public String toString() {
+        return "Complans{" +
+                "cname='" + cname + '\'' +
+                ", cnumber=" + cnumber +
+                '}';
+    }
 }

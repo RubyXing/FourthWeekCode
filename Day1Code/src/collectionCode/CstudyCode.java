@@ -30,12 +30,12 @@ public class CstudyCode {
         stus.add(new Students("eeeeee", "third", 50));
 
         stus.forEach(System.out::println);
-//        System.out.println(stus);
-//        for (Students students : stus) {
-//            System.out.println(students.toString());
-//        }
-//        stus.removeIf(students -> students.getSname().length() < 5);
-//        System.out.println(stus);
+        System.out.println(stus);
+        for (Students students : stus) {
+            System.out.println(students.toString());
+        }
+        stus.removeIf(students -> students.getSname().length() < 5);
+        System.out.println(stus);
 
     }
 
