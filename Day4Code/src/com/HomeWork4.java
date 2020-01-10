@@ -54,7 +54,6 @@ public class HomeWork4 {
 //科特迪瓦，阿根廷，澳大利亚，塞尔维亚，荷兰，尼日利亚，日本，美国，中国，新西兰，巴西，比利时，韩国，喀麦隆，洪都拉斯，意大利
     private void worker4() {
         String[] str = "科特迪瓦，阿根廷，澳大利亚，塞尔维亚，荷兰，尼日利亚，日本，美国，中国，新西兰，巴西，比利时，韩国，喀麦隆，洪都拉斯，意大利".split("，");
-//        List<String> li=new ArrayList<>(Arrays.asList(str));
         Set<String> set = new HashSet<>();
         int i = 0;
         while (set.size() < 16) {
