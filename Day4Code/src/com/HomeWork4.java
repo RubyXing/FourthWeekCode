@@ -8,9 +8,14 @@ import java.util.*;
 
 public class HomeWork4 {
     public void start() {
-        worker4();
+        example ex=HomeWork4::new;
+        HomeWork4 a=ex.creat();
+        System.out.println(a);
+//        worker4();
     }
-
+    interface example{
+        HomeWork4 creat();
+    }
     //从键盘获取一行输入字符串，要求去除重复字符
     private void worker1() {
         Set<Character> set = new HashSet<>();
